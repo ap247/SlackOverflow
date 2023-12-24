@@ -14,18 +14,27 @@ Follow the commands below:
 
 ```docker compose up```
 
-Now you can use localhost:8000 to test out the following routes:
+Routes detailed
+---
 
-### GET: localhost:8000/comments
+**GET: localhost:8000/comments**
+
 Returns list of comments
 
-### GET: localhost:8000/comments/read/{comment_id}
+---
+
+**GET: localhost:8000/comments/read/{comment_id}** 
+
 Returns a specific comment
 - comment_id is the id of the comment you'd like to retrieve
 
-### POST: localhost:8000/comments/create
+---
+
+**POST: localhost:8000/comments/create**
+
 Creates a comment with the details of JSON body and returns the comment with its associated id
 - comment_id is the id of the comment you'd like to retrieve
+
 Example:
 ```
 {
@@ -38,10 +47,14 @@ Example:
 ```
 Ensure that you have all the fields listed above
 
-### PUT: localhost:8000/comments/update/{comment_id}
+---
+
+**PUT: localhost:8000/comments/update/{comment_id}**
+
 Updates a comment with the details of JSON body and specified id
 Returns the details sent in JSON body:
 - comment_id is the id of the comment you'd like to retrieve
+
 Example with updated likes:
 ```
 {
@@ -54,7 +67,10 @@ Example with updated likes:
 ```
 Ensure that you have all the fields listed above whether they gave updated values or not
 
-### DELETE: localhost:8000/comments/delete/{comment_id}
+---
+
+**DELETE: localhost:8000/comments/delete/{comment_id}**
+
 Deletes a comment at the specified id:
 - comment_id is the id of the comment you'd like to delete
 
